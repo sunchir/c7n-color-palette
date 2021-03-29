@@ -1,0 +1,51 @@
+{
+  "name": "c7n-color-palette",
+  "version": "0.0.1",
+  "description": "A color generator",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "jest --config jestconfig.json",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sunchir/c7n-color-palette.git"
+  },
+  "keywords": [
+    "c7n-ui",
+    "hzero-ui",
+    "ant-ui"
+  ],
+  "author": "sunchir",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sunchir/c7n-color-palette.gitissues"
+  },
+  "homepage": "https://github.com/sunchir/c7n-color-palette.git#readme",
+  "devDependencies": {
+    "@types/jest": "^26.0.22",
+    "@types/mocha": "^8.2.2",
+    "@types/node": "^14.14.37",
+    "@types/tinycolor2": "^1.4.2",
+    "codecov": "^3.1.0",
+    "jest": "^23.6.0",
+    "prettier": "^1.13.2",
+    "tinycolor2": "^1.4.2",
+    "ts-jest": "^22.4.6",
+    "tslint": "^5.10.0",
+    "tslint-config-prettier": "^1.13.0",
+    "typescript": "^4.2.3"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "dependencies": {}
+}

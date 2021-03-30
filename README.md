@@ -1,3 +1,10 @@
-[![Codecov Coverage](https://img.shields.io/codecov/c/github/caki0915/my-awesome-greeter/coverage.svg?style=flat-square)](https://codecov.io/gh/caki0915/my-awesome-greeter/)
+[![colorPalette](https://choerodon-ui.gitee.io/c7n-color-palette)
 
-# My Awesome Greeter
+# a color generator for c7n-ui and hzero-ui
+
+```js
+import colorPalette from 'c7n-color-palette';
+// color： 具体颜色
+// index: 0 ~ 10
+colorPalette(color: string, index: number)
+```

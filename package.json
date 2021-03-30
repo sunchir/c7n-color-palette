@@ -1,6 +1,6 @@
 {
   "name": "c7n-color-palette",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A color generator",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -29,7 +29,7 @@
   "bugs": {
     "url": "https://github.com/sunchir/c7n-color-palette.gitissues"
   },
-  "homepage": "https://github.com/sunchir/c7n-color-palette.git#readme",
+  "homepage": "https://choerodon-ui.gitee.io/c7n-color-palette",
   "devDependencies": {
     "@types/jest": "^26.0.22",
     "@types/mocha": "^8.2.2",
